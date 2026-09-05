@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | FreshBite</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">🍔 Fresh<span>Bite</span></div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="restaurants.html">Restaurants</a>
+        <a href="menu.html">Menu</a>
+        <a href="offers.html">Offers</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="analytics.html">Analytics</a>
+    </nav>
+</header>
+
+<main class="page-container">
+
+    <h1>Contact Us 📞</h1>
+
+    <p>
+        Have a question or need help with your order?
+        Contact the FreshBite team.
+    </p>
+
+    <div class="contact-container">
+
+        <div class="contact-info">
+
+            <h2>Get in Touch</h2>
+
+            <p>📍 Location: Pune, Maharashtra, India</p>
+
+            <p>📞 Phone: +91 98765 43210</p>
+
+            <p>📧 Email: support@freshbite.com</p>
+
+            <p>🕐 Support: 9:00 AM – 10:00 PM</p>
+
+        </div>
+
+        <form onsubmit="submitContact(event)">
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Your Name"
+                required
+            >
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Your Email"
+                required
+            >
+
+            <input
+                type="text"
+                id="subject"
+                placeholder="Subject"
+                required
+            >
+
+            <textarea
+                id="message"
+                placeholder="Write your message..."
+                rows="6"
+                required
+            ></textarea>
+
+            <button type="submit">Send Message</button>
+
+        </form>
+
+    </div>
+
+</main>
+
+<script src="js/app.js"></script>
+
+</body>
+</html>

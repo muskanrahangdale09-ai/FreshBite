@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FreshBite | Food Analytics</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <div class="logo">
+        🍔 FreshBite
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="restaurants.html">Restaurants</a>
+        <a href="menu.html">Menu</a>
+        <a href="offers.html">Offers</a>
+        <a href="analytics.html">Analytics</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+</header>
+
+
+<main class="analytics-container">
+
+    <section class="analytics-header">
+
+        <h1>📊 FreshBite Food Analytics</h1>
+
+        <p>
+            Analyze food orders, customer behavior, sales,
+            ratings and future food demand.
+        </p>
+
+    </section>
+
+
+    <!-- SUMMARY CARDS -->
+
+    <section class="analytics-cards">
+
+        <div class="analytics-card">
+            <span>🍔</span>
+            <h3>Total Orders</h3>
+            <h2 id="totalOrders">0</h2>
+        </div>
+
+        <div class="analytics-card">
+            <span>💰</span>
+            <h3>Total Revenue</h3>
+            <h2 id="totalRevenue">₹0</h2>
+        </div>
+
+        <div class="analytics-card">
+            <span>👥</span>
+            <h3>Total Customers</h3>
+            <h2 id="totalCustomers">0</h2>
+        </div>
+
+        <div class="analytics-card">
+            <span>⭐</span>
+            <h3>Average Rating</h3>
+            <h2 id="averageRating">0</h2>
+        </div>
+
+    </section>
+
+
+    <!-- MOST ORDERED FOOD -->
+
+    <section class="analytics-section">
+
+        <h2>🍔 Most Ordered Food Items</h2>
+
+        <div class="chart-box">
+            <canvas id="foodChart"></canvas>
+        </div>
+
+    </section>
+
+
+    <!-- SALES ANALYSIS -->
+
+    <section class="analytics-section">
+
+        <h2>📊 Sales Analysis</h2>
+
+        <div class="chart-box">
+            <canvas id="salesChart"></canvas>
+        </div>
+
+    </section>
+
+
+    <!-- CUSTOMER PATTERN -->
+
+    <section class="analytics-section">
+
+        <h2>👥 Customer Ordering Patterns</h2>
+
+        <div class="chart-box">
+            <canvas id="customerChart"></canvas>
+        </div>
+
+    </section>
+
+
+    <!-- REVENUE PROFIT -->
+
+    <section class="analytics-section">
+
+        <h2>💰 Revenue & Profit Trends</h2>
+
+        <div class="chart-box">
+            <canvas id="profitChart"></canvas>
+        </div>
+
+    </section>
+
+
+    <!-- PEAK ORDERING TIME -->
+
+    <section class="analytics-section">
+
+        <h2>🕐 Peak Ordering Times</h2>
+
+        <div class="chart-box">
+            <canvas id="timeChart"></canvas>
+        </div>
+
+    </section>
+
+
+    <!-- FOOD CATEGORIES -->
+
+    <section class="analytics-section">
+
+        <h2>📍 Popular Food Categories</h2>
+
+        <div class="chart-box">
+            <canvas id="categoryChart"></canvas>
+        </div>
+
+    </section>
+
+
+    <!-- RATINGS -->
+
+    <section class="analytics-section">
+
+        <h2>⭐ Food Ratings & Reviews</h2>
+
+        <div class="chart-box">
+            <canvas id="ratingChart"></canvas>
+        </div>
+
+    </section>
+
+
+    <!-- DEMAND PREDICTION -->
+
+    <section class="prediction-section">
+
+        <h2>📈 Future Food Demand Prediction</h2>
+
+        <p>
+            FreshBite uses previous ordering data to estimate
+            future demand for popular food items.
+        </p>
+
+        <div class="prediction-grid">
+
+            <div class="prediction-card">
+                <h3>🍕 Pizza</h3>
+                <p>Predicted Demand</p>
+                <strong>High ↑</strong>
+            </div>
+
+            <div class="prediction-card">
+                <h3>🍔 Burger</h3>
+                <p>Predicted Demand</p>
+                <strong>Very High ↑</strong>
+            </div>
+
+            <div class="prediction-card">
+                <h3>🍝 Pasta</h3>
+                <p>Predicted Demand</p>
+                <strong>Medium →</strong>
+            </div>
+
+            <div class="prediction-card">
+                <h3>🥗 Salad</h3>
+                <p>Predicted Demand</p>
+                <strong>Growing ↑</strong>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- INSIGHTS -->
+
+    <section class="insights-section">
+
+        <h2>💡 Business Insights</h2>
+
+        <ul>
+
+            <li>
+                🍔 Burgers are among the most frequently ordered foods.
+            </li>
+
+            <li>
+                🕐 Evening hours have the highest order activity.
+            </li>
+
+            <li>
+                📍 Fast food is one of the most popular categories.
+            </li>
+
+            <li>
+                ⭐ Highly rated foods receive more repeat orders.
+            </li>
+
+            <li>
+                📈 Historical order data can be used to estimate future demand.
+            </li>
+
+        </ul>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <p>© 2026 FreshBite | Food Ordering & Data Analytics</p>
+
+</footer>
+
+
+<script src="js/analytics.js"></script>
+
+</body>
+</html>

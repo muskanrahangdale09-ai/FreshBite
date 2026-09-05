@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | FreshBite</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">🍔 Fresh<span>Bite</span></div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="restaurants.html">Restaurants</a>
+        <a href="menu.html">Menu</a>
+        <a href="offers.html">Offers</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="analytics.html">Analytics</a>
+    </nav>
+</header>
+
+<main class="page-container">
+
+    <h1>FreshBite Menu 🍽️</h1>
+    <p>Choose your favorite food and enjoy fresh delivery.</p>
+
+    <div class="card-container">
+
+        <div class="food-card">
+            <div class="food-image">🍕</div>
+            <h2>Margherita Pizza</h2>
+            <p>Fresh tomato, mozzarella and basil.</p>
+            <h3>₹249</h3>
+            <button onclick="addToCart('Margherita Pizza',249)">
+                Add to Cart
+            </button>
+        </div>
+
+        <div class="food-card">
+            <div class="food-image">🍔</div>
+            <h2>Classic Burger</h2>
+            <p>Cheese, lettuce, tomato and special sauce.</p>
+            <h3>₹199</h3>
+            <button onclick="addToCart('Classic Burger',199)">
+                Add to Cart
+            </button>
+        </div>
+
+        <div class="food-card">
+            <div class="food-image">🍛</div>
+            <h2>Paneer Butter Masala</h2>
+            <p>Rich Indian curry served with fresh spices.</p>
+            <h3>₹229</h3>
+            <button onclick="addToCart('Paneer Butter Masala',229)">
+                Add to Cart
+            </button>
+        </div>
+
+        <div class="food-card">
+            <div class="food-image">🍜</div>
+            <h2>Veg Noodles</h2>
+            <p>Delicious noodles with fresh vegetables.</p>
+            <h3>₹159</h3>
+            <button onclick="addToCart('Veg Noodles',159)">
+                Add to Cart
+            </button>
+        </div>
+
+        <div class="food-card">
+            <div class="food-image">🍟</div>
+            <h2>French Fries</h2>
+            <p>Crispy golden fries with seasoning.</p>
+            <h3>₹99</h3>
+            <button onclick="addToCart('French Fries',99)">
+                Add to Cart
+            </button>
+        </div>
+
+        <div class="food-card">
+            <div class="food-image">🥗</div>
+            <h2>Healthy Salad</h2>
+            <p>Fresh vegetables and healthy dressing.</p>
+            <h3>₹149</h3>
+            <button onclick="addToCart('Healthy Salad',149)">
+                Add to Cart
+            </button>
+        </div>
+
+    </div>
+
+</main>
+
+<script src="js/app.js"></script>
+
+</body>
+</html>
